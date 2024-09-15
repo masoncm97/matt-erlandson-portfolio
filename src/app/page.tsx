@@ -1,43 +1,44 @@
+"use client";
+
 import Image from "next/image";
+import { CldImage } from "next-cloudinary";
 
 export default function Home() {
   return (
     <main className="grid grid-cols-2 h-screen w-screen relative">
       <div className="absolute center-absolute">
-        <h2 className="text-5xl text-white">matterlandson.com</h2>
+        <h2 className="text-5xl text-blue-500 underline">matterlandson.com</h2>
       </div>
       <div className="no-scrollbar overflow-y-auto">
-        <Image
-          src="/img_1.jpg"
-          width={4032}
-          height={3024}
-          alt="Picture of the author"
+        <CldImage
+          src={"cld-sample-4"}
+          loading="eager"
+          width={1870}
+          height={1250}
+          alt={"sample"}
         />
-        <Image
-          src="/img_2.jpg"
-          width={4032}
-          height={3024}
-          alt="Picture of the author"
-        />
-        <Image
-          src="/img_5.jpg"
-          width={4032}
-          height={3024}
-          alt="Picture of the author"
+        <CldImage
+          src={"cld-sample-2"}
+          loading="eager"
+          width={1870}
+          height={1250}
+          alt={"sample"}
         />
       </div>
       <div className="no-scrollbar overflow-y-auto">
-        <Image
-          src="/img_3.jpg"
-          width={3024}
-          height={4032}
-          alt="Picture of the author"
+        <CldImage
+          src={"cld-sample-3"}
+          loading="eager"
+          width={1870}
+          height={1250}
+          alt={"sample"}
         />
-        <Image
-          src="/img_4.jpg"
-          width={1125}
-          height={1407}
-          alt="Picture of the author"
+        <CldImage
+          src={"cld-sample-5"}
+          loading="eager"
+          width={1870}
+          height={1250}
+          alt={"sample"}
         />
       </div>
     </main>
