@@ -4,7 +4,7 @@ import { CldImage } from "next-cloudinary";
 
 export default function LeftScroll() {
   return (
-      <div className="no-scrollbar overflow-y-auto border border-green-500">
+      <div className="no-scrollbar overflow-y-auto">
         <CldImage
           src={"qxebrqrmmky3jqorj53w"}
           loading="eager"
