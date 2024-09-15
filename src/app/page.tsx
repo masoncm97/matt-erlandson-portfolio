@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import { CldImage } from "next-cloudinary";
 
 export default function Home() {
@@ -11,10 +10,10 @@ export default function Home() {
       </div>
       <div className="no-scrollbar overflow-y-auto">
         <CldImage
-          src={"cld-sample-4"}
+          src={"qxebrqrmmky3jqorj53w"}
           loading="eager"
-          width={1870}
-          height={1250}
+          width={3000}
+          height={3000}
           alt={"sample"}
         />
         <CldImage
