@@ -3,6 +3,10 @@
 export default function Logo() {
   return (
     <div className="absolute center-absolute">
-    <h2 className="text-5xl text-blue-500 underline">matterlandson</h2>
-  </div>)
+    <img 
+        src="ma2_l7xzr1" 
+        alt="Logo" 
+        className="w-20 h-20 object-contain"
+      />
+    </div>)
 }
